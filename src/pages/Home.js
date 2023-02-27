@@ -11,7 +11,7 @@ const Home = () => {
                     <a href='/' className='hover:bg-black transition-all ease-in px-5 py-2 rounded border border-white w-fit cursor-pointer'>Download Resume</a>
                 </div>
                 <div className='w-[100%] lg:max-w-[50%] flex justify-center items-center '>
-                    <img src='nehal.png' alt='Kaies Mahmud Nehal' className='rounded-[50%] w-[50%] max-w-[500px]'/>
+                    <img src='nehal.png' alt='Kaies Mahmud Nehal' className='rounded-[50%] w-[50%] max-w-[500px] border'/>
                 </div>
             </section>
         </>
