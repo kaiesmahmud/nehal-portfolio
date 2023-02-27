@@ -1,8 +1,5 @@
 import React from 'react';
 
-//React icons
-import {GiHumanTarget} from 'react-icons/gi'
-
 const Home = () => {
     return (
         <>
