@@ -15,6 +15,9 @@ const Navbar = () => {
                     <NavLink to={'/about'} >
                         <div className='hover:bg-black transition-all ease-in px-5 py-2 rounded'>About</div>
                     </NavLink>
+                    <NavLink to={'/gigs'} >
+                        <div className='hover:bg-black transition-all ease-in px-5 py-2 rounded'>Gigs</div>
+                    </NavLink>
                     <NavLink to={'/projects'} >             
                         <div className='hover:bg-black transition-all ease-in px-5 py-2 rounded'>Projects</div>
                     </NavLink>
