@@ -8,7 +8,7 @@ const Home = () => {
                     <h1 className='text-2xl font-extralight'>Kaies Mahmud Nehal</h1>
                     <h3 className='text-sm opacity-50'>Full Stack Website Developer</h3>
                     <h4 className='text-xl opacity-70 '>Your website is the face of your business. The first impression you make on your potential customers is through your official website and Allied Technologies understands that this first impression better be impressive!</h4>
-                    <a href='#' className='hover:bg-black transition-all ease-in px-5 py-2 rounded border border-white w-fit cursor-pointer'>Download Resume</a>
+                    <a href='/' className='hover:bg-black transition-all ease-in px-5 py-2 rounded border border-white w-fit cursor-pointer'>Download Resume</a>
                 </div>
                 <div className='w-[100%] lg:max-w-[50%] flex justify-center lg:justify-end items-center'>
                     <img src='nehal.png' alt='Kaies Mahmud Nehal' className='rounded-[50%] w-[50%] lg:w-[80%]'/>
