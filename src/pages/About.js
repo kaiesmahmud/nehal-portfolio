@@ -1,6 +1,6 @@
 import React from 'react';
 //icons
-import {MdOutlineBadge,MdBadge} from 'react-icons/md'
+// import {MdOutlineBadge,MdBadge} from 'react-icons/md'
 import {SlBadge} from 'react-icons/sl'
 const About = () => {
     return (
