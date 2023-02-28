@@ -14,10 +14,10 @@ const Navbar = () => {
             <header className="App-header p-5 text-xs md:text-base lg:text-lg">
                 <nav className='flex flex-col gap-4 lg:flex-row justify-between items-center mx-2 md:mx-10 lg:mx-20  '>
                     <div className='text-[2rem] lg:text-[3rem] font-extralight flex justify-between w-full'>
-                        <NavLink to={'/'} onClick={changeOpenMenu}>
+                        <NavLink to={'/'} onClick={()=>setOpenMenu(false)}>
                         N
                         </NavLink>
-                        <div className='text-3xl lg:hidden' onClick={changeOpenMenu}>
+                        <div className='text-3xl lg:hidden cursor-pointer' onClick={changeOpenMenu}>
                             {openMenu? <VscClose/> :<HiBars2/>}
                         </div>
                     </div>
