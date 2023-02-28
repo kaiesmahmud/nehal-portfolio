@@ -27,7 +27,7 @@ const About = () => {
     ]
     return (
         <div className=' m-10 lg:m-20'>
-            <section  className='mx-10 lg:mx-20 my-20 p-5 flex flex-col items-center lg:flex-row lg:justify-between '>
+            <section  className='mx-5 md:mx-10 lg:mx-20 my-20 p-5 flex flex-col items-center lg:flex-row lg:justify-between '>
                 <div className='w-[100%] lg:max-w-[50%] flex justify-center items-center '>
                     <img src='nehal.png' alt='Kaies Mahmud Nehal' className='rounded-[50%] w-[50%] max-w-[500px] border '/>
                 </div>
