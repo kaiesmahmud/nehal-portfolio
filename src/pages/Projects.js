@@ -39,11 +39,10 @@ const Projects = () => {
                 projects.map(project=>(
                     <div key={project.id} className='shadow-xl overflow-hidden border p-5 w-[100%] max-w-[800px] lg:w-[40%] rounded hover:bg-black transition-all ease-in duration-300'>
                         <div className=' overflow-hidden w-[100%] rounded'>
-                            {/* <img className='hover:scale-125 transition-all duration-300' src='' alt='project img'  /> */}
-                            <img className='hover:scale-125 transition-all duration-300' src={project.img} alt='project img'  />
+                            <img className='hover:scale-125 transition-all duration-300' src={project.img} alt={project.name}  />
                         </div>
-                        <div className='flex justify-start gap-5 items-center'>
-                            <div className='text-xl lg:text-5xl'><DiRaphael/></div>
+                        <div className='flex justify-start gap-5 items-center pt-3'>
+                            <div className='text-3xl lg:text-5xl'><DiRaphael/></div>
                             <h1 className='text-xl lg:text-2xl font-light'>{project.name}</h1>
                         </div>
                         <div>
