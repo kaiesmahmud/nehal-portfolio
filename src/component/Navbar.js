@@ -1,30 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+//icons
+import {VscClose} from 'react-icons/vsc';
+import {HiBars2} from 'react-icons/hi2';
 
 const Navbar = () => {
+    const [openMenu, setOpenMenu] = useState(false)
+    const changeOpenMenu = () =>{
+        setOpenMenu(!openMenu)
+    }
     return (
         <>
             <header className="App-header p-5 text-xs md:text-base lg:text-lg">
-                <nav className='flex flex-col gap-4 lg:flex-row justify-between items-center mx-2 md:mx-10 lg:mx-20 cursor-pointer '>
-                    <div className='text-[2rem] lg:text-[3rem] font-extralight'>
-                        <NavLink to={'/'}>
+                <nav className='flex flex-col gap-4 lg:flex-row justify-between items-center mx-2 md:mx-10 lg:mx-20  '>
+                    <div className='text-[2rem] lg:text-[3rem] font-extralight flex justify-between w-full'>
+                        <NavLink to={'/'} onClick={changeOpenMenu}>
                         N
                         </NavLink>
+                        <div className='text-3xl lg:hidden' onClick={changeOpenMenu}>
+                            {openMenu? <VscClose/> :<HiBars2/>}
+                        </div>
                     </div>
-                    <div className='min-w-[300px] flex justify-evenly items-center gap-2'>
-                        <NavLink to={'/about'} >
+                    <div className={`w-full p-5  bg-opacity-40 flex-col lg:flex lg:flex-row bg-black lg:bg-inherit  md:justify-evenly items-center gap-2 ${(openMenu)?"flex":"hidden"} transition-all duration-300`}>
+                        <NavLink to={'/about'} onClick={changeOpenMenu} className={(({isActive})=>(isActive?'bg-black rounded':""))}>
                             <div className='hover:bg-black transition-all ease-in px-5 py-2 rounded'>About</div>
                         </NavLink>
-                        <NavLink to={'/gigs'} >
+                        <NavLink to={'/gigs'} onClick={changeOpenMenu} className={(({isActive})=>(isActive?'bg-black rounded':""))} >
                             <div className='hover:bg-black transition-all ease-in px-5 py-2 rounded'>Gigs</div>
                         </NavLink>
-                        <NavLink to={'/projects'} >             
+                        <NavLink to={'/projects'} onClick={changeOpenMenu} className={(({isActive})=>(isActive?'bg-black rounded':""))} >             
                             <div className='hover:bg-black transition-all ease-in px-5 py-2 rounded'>Projects</div>
                         </NavLink>
-                        <NavLink to={'/experience'} >
+                        <NavLink to={'/experience'} onClick={changeOpenMenu} className={(({isActive})=>(isActive?'bg-black rounded':""))} >
                             <div className='hover:bg-black transition-all ease-in px-5 py-2 rounded'>Experiences</div>
                         </NavLink>
-                        <NavLink to={'/contactme'} >
+                        <NavLink to={'/contactme'} onClick={changeOpenMenu} className={(({isActive})=>(isActive?'bg-black rounded':""))} >
                             <div className='hover:bg-black transition-all ease-in px-5 py-2 rounded border border-white text-center'>Contact Me</div>
                         </NavLink>
                     </div>
