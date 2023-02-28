@@ -67,7 +67,7 @@ const Experience = () => {
             <section className='flex flex-wrap gap-10 p-5 '>
                 {
                     experiences.map(exp=>(
-                        <div key={exp.id} className='w-[100%] lg:w-[45%] border rounded-lg  p-5 '>
+                        <div key={exp.id} className='w-[100%] lg:w-[45%] border rounded-lg  p-5 bg-gray-900'>
                             <div className=' flex justify-start gap-5 items-start'>
                                 <RxBarChart className='text-3xl p-1 border rounded-full'/>
                                 <div className='flex flex-col gap-2'>
@@ -85,7 +85,7 @@ const Experience = () => {
             <section className='flex flex-wrap gap-10 p-5 '>
                 {
                     skills.map(skill=>(
-                        <div key={skill.id} className='w-[100%] lg:w-[30%] border rounded-lg  p-5 '>
+                        <div key={skill.id} className='w-[100%] lg:w-[30%] border rounded-lg  p-5 bg-gray-900'>
                             <div className=' flex justify-start gap-5 items-start'>
                                 <ImStatsBars className='text-3xl p-1 border rounded-full'/>
                                 <div className='flex flex-col gap-2'>
@@ -109,7 +109,7 @@ const Experience = () => {
             <section className='flex flex-wrap gap-10 p-5 '>
                 {
                     certificates.map(i=>(
-                        <div key={i.id} className='w-[100%] lg:w-[30%] border rounded-lg  p-5 '>
+                        <div key={i.id} className='w-[100%] lg:w-[30%] border rounded-lg  p-5 bg-gray-900'>
                             <div className='p-1 overflow-hidden rounded-lg'>
                                 <img src={i.img} alt={i.name} className='w-[100%] hover:scale-125 transition-all duration-300 rounded-lg'/>
                             </div>
