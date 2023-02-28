@@ -34,7 +34,7 @@ const Projects = () => {
         }
     ]
     return (
-        <div className=' p-5 flex flex-wrap justify-center items-center gap-6'>
+        <div className='m-10 md:m-20 lg:m-0 p-5 flex flex-wrap justify-center items-center gap-6'>
             {
                 projects.map(project=>(
                     <div key={project.id} className='shadow-xl overflow-hidden border p-5 w-[100%] max-w-[800px] lg:w-[40%] rounded hover:bg-black transition-all ease-in duration-300'>
