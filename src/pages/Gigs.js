@@ -61,10 +61,10 @@ const Gigs = () => {
                             <p className='font-light opacity-80'> <span className='font-semibold'>Experience: </span>
                             {ob.experience}     
                             </p>
-                            <div className='text-xs my-2 font-light flex flex-wrap items-center gap-2 '>
+                            <div className='text-xs my-2 font-extralight flex flex-wrap items-center gap-2 '>
                                 {
                                     ob?.platforms.map(ob=>
-                                    <div className=' border rounded p-2  bg-gray-900 opacity-70'>{ob}</div>)
+                                    <div className='text-xs rounded px-2 py-1 bg-slate-900 bg-opacity-70'>{ob}</div>)
                                 }
                             </div>
                             <p className='font-extralight opacity-80'>
