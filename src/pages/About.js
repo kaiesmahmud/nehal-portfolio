@@ -20,7 +20,7 @@ const About = () => {
         {
             id:3,
             name:'SSC in Science<',
-            institute:'Gokul Nagar High Schoo',
+            institute:'Gokulnagar High School',
             time:'January, 2016 to January, 2018',
             cgpa:'CGPA: 4.61 (out of 5.00)'            
         },

@@ -78,7 +78,6 @@ const Experience = () => {
                             </div>
                         </div> 
                     ))
-                    
                 }               
             </section>
             <h1 className='text-3xl px-5 font-extralight'>Skills:</h1>
@@ -97,7 +96,6 @@ const Experience = () => {
                                             ))
                                         }
                                     </div>
-                                    
                                 </div>
                             </div>
                         </div> 
@@ -118,7 +116,6 @@ const Experience = () => {
                                 <div className='flex flex-col gap-2'>
                                     <h2 className='text-lg font-extralight'>{i.name}</h2>
                                     <h3 className='text-xs text-opacity-30 opacity-30'>{i.date}</h3>
-
                                 </div>
                             </div>
                         </div> 
