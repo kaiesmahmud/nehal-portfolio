@@ -11,8 +11,8 @@ const Navbar = () => {
     }
     return (
         <>
-            <header className="App-header p-5 text-xs md:text-base lg:text-lg">
-                <nav className='flex flex-col gap-4 lg:flex-row justify-between items-center mx-2 md:mx-10 lg:mx-20  '>
+            <header className=" sticky top-0  App-header px-5 py-3 lg:py-0 text-xs md:text-base lg:text-lg backdrop-blur-3xl z-30">
+                <nav className=' flex flex-col gap-4 lg:flex-row justify-between items-center mx-2 md:mx-10 lg:mx-20  '>
                     <div className='text-[2rem] lg:text-[3rem] font-extralight flex justify-between w-full'>
                         <NavLink to={'/'} onClick={()=>setOpenMenu(false)}>
                         <p className='p-2'>N</p>
