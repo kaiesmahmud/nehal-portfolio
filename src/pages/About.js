@@ -42,6 +42,7 @@ const About = () => {
                 </div>
                 
             </section>
+            {/* --------------------------------------------Educational Qualification--------------------------------------------- */}
             <section>
                 <h1 className='text-3xl font-extralight text-center mb-20'>Educational Qualification</h1>
                 <div className='flex flex-wrap items-center justify-center gap-8'>
@@ -61,6 +62,23 @@ const About = () => {
                                 </div>
                             ))
                         }                    
+                </div>
+            </section>
+            {/* -----------------------Language Section---------------------------------------- */}
+            <section className='pt-20'>
+                <h1 className='text-3xl font-extralight text-center pb-10 '>Language</h1>
+                <div className='flex items-center justify-center gap-6 font-extralight'>
+                    <h4 className='bg-black border rounded px-2 py-1'>English</h4>
+                    <h4 className='bg-black border rounded px-2 py-1'>Bangla</h4>
+                </div>
+            </section>
+            {/* -----------------------Hobby Section---------------------------------------- */}
+            <section className='pt-20'>
+                <h1 className='text-3xl font-extralight text-center pb-10 '>Hobby</h1>
+                <div className='flex items-center justify-center gap-6 font-extralight'>
+                    <h4 className='bg-black border rounded px-3 py-1'>Programming</h4>
+                    <h4 className='bg-black border rounded px-3 py-1'>Travelling</h4>
+                    <h4 className='bg-black border rounded px-3 py-1'>Peting Animal</h4>
                 </div>
             </section>
         </div>
