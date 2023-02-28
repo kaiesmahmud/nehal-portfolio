@@ -67,7 +67,6 @@ const Gigs = () => {
                                     <div className=' border rounded p-2  bg-gray-900 opacity-70'>{ob}</div>)
                                 }
                             </div>
-                            
                             <p className='font-extralight opacity-80'>
                             {ob.about}     
                             </p>
