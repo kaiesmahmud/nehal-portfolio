@@ -68,7 +68,7 @@ const About = () => {
                 </div>
             </section>
             {/* -----------------------Language Section---------------------------------------- */}
-            <section className='pt-20'>
+            <section className='pt-20 text-xs lg:text-base'>
                 <h1 className='text-3xl font-extralight text-center pb-10 '>Language</h1>
                 <div className='flex items-center justify-center gap-6 font-extralight'>
                     <h4 className='bg-black border rounded px-2 py-1'>English</h4>
@@ -76,7 +76,7 @@ const About = () => {
                 </div>
             </section>
             {/* -----------------------Hobby Section---------------------------------------- */}
-            <section className='pt-20'>
+            <section className='pt-20 text-xs lg:text-base'>
                 <h1 className='text-3xl font-extralight text-center pb-10 '>Hobby</h1>
                 <div className='flex items-center justify-center flex-wrap gap-6 font-extralight'>
                     <h4 className='bg-black border rounded px-3 py-1'>Programming</h4>

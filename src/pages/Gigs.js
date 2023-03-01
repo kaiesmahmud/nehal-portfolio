@@ -1,6 +1,6 @@
 import React from 'react';
 //icons
-import {GiGlock} from 'react-icons/gi'
+import {GiGlobe} from 'react-icons/gi'
 
 const Gigs = () => {
     const gigs = [
@@ -52,9 +52,9 @@ const Gigs = () => {
         <div className='m-10 lg:m-20 p-5 flex flex-wrap justify-center items-center gap-5'>
             {
                 gigs.map(ob=>(
-                    <div key={ob.id} className=' border p-5 w-[100%] lg:w-[40%] rounded hover:bg-black transition-all ease-in duration-300'>
-                        <div className='flex justify-start gap-5 items-center'>
-                            <div className='text-xl lg:text-5xl'><GiGlock/></div>
+                    <div key={ob.id} className=' border p-5 w-[100%] lg:w-[40%] rounded bg-slate-900 hover:bg-black transition-all ease-in duration-300'>
+                        <div className='flex justify-start gap-5 items-center pb-5'>
+                            <div className='text-3xl lg:text-5xl'><GiGlobe/></div>
                             <h1 className='text-xl lg:text-2xl font-light'>{ob.name}</h1>
                         </div>
                         <div>
@@ -64,7 +64,7 @@ const Gigs = () => {
                             <div className='text-xs my-2 font-extralight flex flex-wrap items-center gap-2 '>
                                 {
                                     ob?.platforms.map(ob=>
-                                    <div className='text-xs rounded px-2 py-1 bg-slate-900 bg-opacity-70'>{ob}</div>)
+                                    <div className='text-xs rounded px-2 py-1 bg-black hover:border bg-opacity-70'>{ob}</div>)
                                 }
                             </div>
                             <p className='font-extralight opacity-80'>
