@@ -32,12 +32,15 @@ const About = () => {
                     <img src='nehal.png' alt='Kaies Mahmud Nehal' className='rounded-[50%] w-[50%] max-w-[500px] border '/>
                 </div>
                 <div className='mt-10 lg:m-0 text-center lg:text-start lg:max-w-[50%]'>
-                    <p className='text-sm md:text-base lg:text-xl opacity-70 font-extralight'>I have been working as a Digital Marketer
+                    {/* <p className='text-sm md:text-base lg:text-xl opacity-70 font-extralight'>I have been working as a Digital Marketer
                     for seven years. In my previous company, I was appointed as the leader of many marketing projects. Last year, I also successfully developed strategies that
                     increased my clients conversion rate by 46%. The digital marketing world was introduced to me when I was in high
                     school. My brother who was also a digital marketer often brought me along to his office to see how they work. From that
                     moment, I kept learning about this field, entered college, graduated, and started working as a digital marketer at my
                     brothers company, Wardiere Inc.
+                    </p> */}
+                    <p className='text-sm md:text-base lg:text-xl opacity-70 font-extralight'>
+                        I am a Full Stack Developer (MERN STACK). I have been working as a full stack developer in DevdeerTech for 8 month+ . I love to learn new technologies. I have done many projects where most of them was business websites. I am a student of Computer Science & Engineering Background. I can learn and apply any logics and technologies within a short time.
                     </p>
                 </div>
                 
@@ -75,7 +78,7 @@ const About = () => {
             {/* -----------------------Hobby Section---------------------------------------- */}
             <section className='pt-20'>
                 <h1 className='text-3xl font-extralight text-center pb-10 '>Hobby</h1>
-                <div className='flex items-center justify-center gap-6 font-extralight'>
+                <div className='flex items-center justify-center flex-wrap gap-6 font-extralight'>
                     <h4 className='bg-black border rounded px-3 py-1'>Programming</h4>
                     <h4 className='bg-black border rounded px-3 py-1'>Travelling</h4>
                     <h4 className='bg-black border rounded px-3 py-1'>Peting Animal</h4>
