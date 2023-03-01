@@ -34,10 +34,10 @@ const Projects = () => {
         }
     ]
     return (
-        <div className='m-10 md:m-20 lg:m-0 p-5 flex flex-wrap justify-center items-center gap-6'>
+        <div className='m-5 md:m-20 lg:m-0 p-5 flex flex-wrap justify-center items-center gap-6'>
             {
                 projects.map(project=>(
-                    <div key={project.id} className='shadow-xl overflow-hidden border p-5 w-[100%] max-w-[800px] lg:w-[40%] rounded hover:bg-black transition-all ease-in duration-300'>
+                    <div key={project.id} className='shadow-xl overflow-hidden border p-3 w-[100%] max-w-[800px] lg:w-[40%] rounded hover:bg-black transition-all ease-in duration-300'>
                         <div className=' overflow-hidden w-[100%] rounded'>
                             <img className='hover:scale-125 transition-all duration-300' src={project.img} alt={project.name}  />
                         </div>
@@ -56,7 +56,7 @@ const Projects = () => {
                             {project.description || "No Description"}     
                             </p>
                         </div>
-                        <div className='flex gap-5 justify-around p-5'>
+                        <div className='flex gap-5 justify-around p-5 text-xs lg:text-base'>
                                 <a href={project.viewLink || "/"} className='bg-gray-900 px-5 py-2 border hover:border-black rounded hover:bg-gray-700 transition-all duration-300'>View Live</a>
                                 <a href={project.githubLink || '/'} className='bg-gray-900 px-5 py-2 border hover:border-black rounded hover:bg-gray-700 transition-all duration-300'>Github code</a>
                         </div>
